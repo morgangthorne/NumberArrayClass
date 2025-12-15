@@ -52,3 +52,43 @@ double NumberArray::GetNumber(int Index) const {
 	return Numbers[Index];
 
 }
+
+//Calculation For min
+double NumberArray::GetMin() const {
+
+	double Min = Numbers[0];
+
+	for (int i = 1; i < Size; i++) {
+
+		if (Numbers[i] < Min)
+			Min = Numbers[i];
+	}
+
+	return Min;
+}
+
+//Calculation for Max
+double NumberArray::GetMax() const {
+
+	double Max = Numbers[0];
+
+	for (int i = 1; i < Size; i++) {
+
+		if (Numbers[i] > Max)
+			Max = Numbers[i];
+	}
+
+	return Max;
+}
+
+//Calculation for Average
+double NumberArray::GetAverage() const {
+
+	double Total = 0.0;
+
+	for (int i = 0; i < Size; i++)
+
+		Total += Numbers[i];
+
+	return Total / Size;
+}
