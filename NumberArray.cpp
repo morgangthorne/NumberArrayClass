@@ -31,7 +31,7 @@ void NumberArray::SetNumber(int Index, double Value) {
 
 	if (Index < 0 || Index >= Size) {
 		
-		cout << "Index is out of bounds of the array, number not stored";
+		cout << "Index is out of bounds from array, returning to default value." << endl;
 
 		return;
 	}
@@ -44,7 +44,7 @@ void NumberArray::SetNumber(int Index, double Value) {
 double NumberArray::GetNumber(int Index) const {
 
 	if (Index < 0 || Index >= Size) {
-		cout << "Index is out of bounds from array, returning to default value.";
+		cout << "Index is out of bounds from array, returning to default value." << endl;
 
 		return Default_Value;
 	}

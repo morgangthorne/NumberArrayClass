@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
 
-    cout << "Test Constructs" << endl;
+    cout << "-Test Constructs-" << endl;
 
     NumberArray a1;
     cout << "Default Constructor: Array size 10" << endl;
@@ -22,7 +22,7 @@ int main()
     a2.Print();
 
 
-    cout << "Test Mutator" << endl;
+    cout << "-Test Mutator-" << endl;
 
     //////////////////
     random_device rd;
@@ -42,11 +42,11 @@ int main()
     cout << "Attempt to set number out of bounds for index (20): " << endl;
     a2.SetNumber(20, 5.5);
 
-    cout << "Test Accessors" << endl;
+    cout << "-Test Accessors-" << endl;
     cout << "Accessor item is at an index of 5: " << a2.GetNumber(5) << endl;
 
-    cout << "Accessor item is at an out of bound index of 20: ";
-    cout << a2.GetNumber(20) << endl;
+    cout << "Accessor item is at an out of bound index of 20: " << a2.GetNumber(20) << endl;
+    
 
     cout << "The Minimum Value of The Array is: " << a2.GetMin() << endl;
     cout << "The Maximum Value of The Array is: " << a2.GetMax() << endl;
