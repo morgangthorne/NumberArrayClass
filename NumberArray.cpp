@@ -25,3 +25,20 @@ NumberArray::~NumberArray() {
 
 	delete[] Numbers;
 }
+
+//Mutator
+void NumberArray::SetNumber(int Index, double Value) {
+
+	if (Index < 0 || Index >= Size) {
+		
+		cout << "Index is out of bounds of the array, number not stored";
+
+		return;
+	}
+
+	Numbers[Index] = Value;
+
+}
+
+
+//Accessor
