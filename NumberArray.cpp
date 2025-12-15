@@ -40,5 +40,15 @@ void NumberArray::SetNumber(int Index, double Value) {
 
 }
 
-
 //Accessor
+double NumberArray::GetNumber(int Index) const {
+
+	if (Index < 0 || Index >= Size) {
+		cout << "Index is out of bounds from array, returning to default value.";
+
+		return Default_Value;
+	}
+
+	return Numbers[Index];
+
+}
