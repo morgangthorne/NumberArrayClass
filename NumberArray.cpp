@@ -92,3 +92,10 @@ double NumberArray::GetAverage() const {
 
 	return Total / Size;
 }
+
+//Print Function
+void NumberArray::Print() const {
+
+	for (int i = 0; i < Size; i++)
+		cout << Numbers[i] << endl;
+}
