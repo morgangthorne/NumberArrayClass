@@ -18,3 +18,10 @@ NumberArray::NumberArray(int s) {
 
 }
 
+//Destruct
+NumberArray::~NumberArray() {
+
+	cout << "Destructor is running" << endl;
+
+	delete[] Numbers;
+}
