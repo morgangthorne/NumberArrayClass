@@ -31,4 +31,5 @@ private:
 	double* Numbers;
 };
 
+
 #endif
